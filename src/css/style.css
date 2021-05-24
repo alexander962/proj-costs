@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Caveat';
+  pointer-events: unset;
+}
+
+body {
+  background: url(../../src/img/4882066.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 950px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background: #fc6e6d;
+  border-radius: 50px 50px 0 0;
+}
+
+.header-imgs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: -50px;
+}
+
+.header-imgs img {
+  width: 50px;
+  height: 70px;
+  pointer-events: none;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header-text span {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.content {
+  width: 100%;
+  min-height: 400px;
+  background: #fefeff;
+  padding: 10px;
+}
+
+.content-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-info_main {
+  display: flex;
+}
+
+.content-info_shop {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.content-info_shop span {
+  font-size: 50px;
+}
+
+.content-info_shop-input {
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+  border-radius: 100px;
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.content-info_shop-input:focus {
+  outline: none;
+  box-shadow: 0 0 30px rgba(0,0,255,0.5); 
+  background: linear-gradient(to top, #fa6e70 0%, #ffffff 40%);
+  font-weight: 900;
+  border: 1px solid rgba(0,0,255,0.5);
+}
+
+.content-info_add button {
+  background: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.content-info_add button img {
+  width: 80px;
+  height: 80px;
+}
+
+#sum {
+  display: flex;
+  width: 40%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 20px;
+  justify-content: end;
+  font-size: 30px;
+  border: 4px double black;
+}
+
+.content-page_block {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ min-height: 150px;
+ padding: 20px;
+ font-size: 30px;
+ border: 15px solid #cbc1c0;
+ border-radius: 50px;
+ margin-bottom: 20px;
+}
+
+.block-imgs button {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: white;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+} 
+
+.block-imgs button img {
+  width: 70px;
+  height: 70px;
+} 
+
+.block-shopNum {
+  text-align: center;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  padding: 10px;
+  min-height: 120px;
+  border-radius: 20px;
+  color: #fefeff;
+  font-weight: 700;
+}
+
+#size {
+  font-size: 20px;
+}
+
+.inputEdite {
+  width: 200px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  border-radius: 100px;
+  outline: none;
+}
+
+.block-text {
+  margin-left: 20px;
+}
+
+#content-page {
+  max-height: 420px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin-top: 20px;
+}
+
+#content-page::-webkit-scrollbar { 
+  width: 0; 
+}
